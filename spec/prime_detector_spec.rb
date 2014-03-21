@@ -10,4 +10,14 @@ describe PrimeNumber do
     expect(result).to eq true
   end
 
+  it "detects a non-prime number" do
+    num = PrimeNumber.new
+
+    result = num.prime_number?(4)
+
+    expect(result).to eq false
+  end
+
+
+
 end
